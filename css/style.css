@@ -89,6 +89,11 @@ nav li a:hover {
     line-height: 40px;
 }
 
+.txt p,
+.video-txt p {
+    text-align: justify;
+}
+
 h1,
 h2,
 h3,
@@ -98,7 +103,6 @@ h4 {
 
 .hero-btn,
 .hero {
-    text-align: center;
     margin: auto;
 }
 
@@ -169,10 +173,14 @@ h3 {
     color: var(--secondary-text-color);
     max-width: 400px;
     margin: auto;
-
 }
 
 /* COMPANIES SECTION */
+#companies,
+.card-container {
+    margin-top: 30px;
+}
+
 #companies h2 {
     text-transform: none;
 }
@@ -219,7 +227,7 @@ h3 {
         background-repeat: no-repeat;
         background-size: cover;
         height: 650px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .hero img {

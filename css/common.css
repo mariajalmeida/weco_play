@@ -23,7 +23,7 @@ img {
     width: 100%;
     height: auto;
     display: flex;
-   
+
 }
 
 * {
@@ -73,13 +73,14 @@ nav li a {
 .load {
     position: absolute;
     z-index: 10;
-    background-color: var(  --bg-color-loader);
+    background-color: var(--bg-color-loader);
     width: 100vw;
     height: 100vw;
-    
+
 }
+
 #loader-dots {
-   margin-left: 46%;
+    margin-left: 46%;
 }
 
 #loader-dots span {
@@ -89,7 +90,7 @@ nav li a {
     border-radius: 100%;
     margin: 250px 5px;
     opacity: 0;
-      
+
 }
 
 #loader-dots span:nth-child(1) {
@@ -116,15 +117,13 @@ nav li a {
     }
 }
 
-
-
-
 /* FOOTER */
 footer {
     background-image: url("../img/footwave.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -15px;
+    padding-top: 140px;
+    padding-bottom: 10px;
 }
 
 #footer-container {
@@ -133,9 +132,9 @@ footer {
     flex-wrap: wrap;
 }
 
-#footer-container>div {
-
-    margin: 70px 25px 0;
+#footer-container > div {
+    margin: 10px 50px;
+    width: 200px;
 }
 
 footer img {
@@ -146,13 +145,25 @@ footer p {
     color: var(--main-text-color);
     text-align: center;
     font-size: 12px;
+    font-weight: 900;
 }
 
+footer h4 {
+    margin: 6px 0;
+}
 
 footer ul {
     list-style: none;
     padding: 0;
-    font-size: 12px;
+    font-size: 15px;
+}
+
+.contact ul li {
+    margin-top: 10px;
+}
+
+.contact ul {
+    margin-top: 0;
 }
 
 footer li a,
@@ -174,31 +185,28 @@ footer .fab {
     margin-right: 10px;
 }
 
-@media (min-width: 700px) {
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-pinterest:hover {
+    color: #c8232c;
+}
+
+.fa-youtube:hover {
+    color: #c4302b;
+}
+
+
+@media (min-width: 1000px) {
+
     header {
         justify-content: space-between;
     }
 
-    #footer-container>div {
-        margin: 150px;
+    #footer-container {
+        justify-content: space-around;
     }
 
-    footer ul {
-        font-size: 16px;
-    }
-
-    footer .fa,
-    footer .fab {
-        font-size: 24px;
-    }
-
-}
-
-@media (max-width: 1000px) {
-
-    .logo,
-    nav {
-        margin: auto;
-    }
 
 }
