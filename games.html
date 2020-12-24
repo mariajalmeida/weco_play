@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Learning games for primary schools. 
+        Language learning games, math learning games, logical learning games, art games, physical activiti for kids.">
+    <title>eLearning Games</title>
+    <script src="https://kit.fontawesome.com/62614983e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div class="load">
+        <div id="loader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="background_hero">
+        <header>
+            <div class="logo">
+                <img src="img/wecoplay_logo_white.svg" alt="white-logo" loading="lazy">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="">How it works</a></li>
+                    <li><a href="#footer-container">Contact</a></li>
+                    <li><a href="">Posters</a></li>
+                    <li class="btn">book demo</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="header_container">
+            <img src="img/games_header.png" loading="lazy">
+            <div class="inner_box">
+                <h1>Everything in one neat package</h1>
+                <p>All purchases give you full access to all of our games, updates and all the new yearly releases.</p>
+                <p>Not ready to buy a license for our games yet? Book an online demonstration, where we will be able to
+                    show you our games and answer your questions. Afterwards, you have the possibility to test out the
+                    software yourself with a trial version.</p>
+                <button>Book Online Demo</button>
+                <button>Buy Our Games</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="categories">
+        <button id="all" class="active">All</button>
+        <button id="arts">Arts</button>
+        <button id="languages">Languages</button>
+        <button id="logical">Logical</button>
+        <button id="mathematics">Mathematics</button>
+        <button id="physical-education">Physical Education</button>
+    </div>
+
+
+
+    <main></main>
+    <template id="games">
+        <a href="single-game.html?page=">
+            <div class="box_container">
+                <img src="./img/games_header.png" alt="image">
+                <h2>Title</h2>
+            </div>
+        </a>
+    </template>
+
+    <footer>
+        <div id="footer-container">
+            <div class="adress">
+                <img src="img/wecoplay_logo.svg" alt="logo" loading="lazy">
+                <ul>
+                    <li><b>Weco Play IVS</b>,</li>
+                    <li>Gudrunsvej 78, 3. sal</li>
+                    <li>8220 Brabrand, Denmark</li>
+                    <li>CVR - DK37566047</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4>get in touch</h4>
+                <ul>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:hello@wecoplay.com"
+                            target="_blank">
+                            hello@wecoplay.com</a></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>
+                        +45 93930072</li>
+                    <li><i class="fab fa-facebook-messenger" aria-hidden="true"></i><a href="http://m.me/WECOPLAY"
+                            target="_blank">
+                            messenger</a></li>
+                </ul>
+            </div>
+            <div class="some-icons">
+                <h4>follow us</h4>
+                <a href="https://www.facebook.com/search/top?q=weco%20play" target="_blank">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.pinterest.dk/wecoplay/_created/" target="_blank"><i class="fa fa-pinterest-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCcpdImJ4G0Y5vj_5mtFE2wg" target="_blank"><i
+                        class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <p>&copy2020 WECO PLAY</p>
+    </footer>
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".load").style.display = "none";
+            console.log("load");
+        });
+    </script>
+    <script src="script/games.js"></script>
+</body>
+
+</html>

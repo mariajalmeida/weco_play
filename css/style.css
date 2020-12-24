@@ -1,0 +1,268 @@
+/* main variables */
+:root {
+    --bg-color: #f3f2f3;
+    /* --btn-green: #13a867; */
+    --accent-colour: #13a867;
+    --home-filter: #f6c026;
+    --midsection-filter: #13a867;
+    --button-border-radius: 4px;
+
+    --headline-font: 'Poppins', sans-serif;
+    --copy-font: 'Nunito', sans-serif;
+    --main-text-color: #000;
+    --secondary-text-color: #fff;
+}
+
+
+/*LOADER*/
+#loader-dots span {
+    background-color: var(--accent-colour);
+}
+
+/* BACKGROUND HEADER */
+.background_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: var(--home-filter);
+    padding: 30px 60px;
+    padding-bottom: 0;
+}
+
+nav li a:hover {
+    color: var(--accent-colour);
+    transition: color .8s;
+}
+
+
+.btn {
+    color: var(--secondary-text-color);
+    background: var(--accent-colour);
+    cursor: pointer;
+    border-radius: var(--button-border-radius);
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid var(--accent-colour);
+}
+
+.hero-btn button {
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    background: none;
+    border-radius: var(--button-border-radius);
+    width: 150px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.hero-btn button {
+    border: 1px solid var(--accent-colour);
+    color: white;
+}
+
+/* HOVER BTN HERE */
+
+.hero-btn button:hover {
+    background: var(--accent-colour);
+    color: white;
+}
+
+/* HERO SECTION*/
+#hero {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--secondary-text-color);
+}
+
+.txt {
+    max-width: 350px;
+    margin: auto;
+}
+
+.txt h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--headline-font);
+}
+
+.hero-btn,
+.hero {
+    text-align: center;
+    margin: auto;
+}
+
+
+.focus {
+    text-align: center;
+}
+
+#card-container p {
+    color: black;
+    text-align: justify;
+}
+
+/* 3 CARDS, flex */
+#card-container {
+    margin: 30px;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.card-one,
+.card-two,
+.card-three {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 300px;
+    padding: 35px;
+    margin: 50px auto;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+}
+
+
+#card-container img {
+    max-width: 60px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #f3f2f3;
+    border-radius: 50%;
+}
+
+/* VIDEO SECTION */
+
+#video-container {
+    /* background-image: url("/img/home-midbck-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: var(--midsection-filter);
+    padding: 10px;
+}
+
+
+.video iframe {
+    /* width: -webkit-fill-available; */
+    max-width: 100%;
+}
+
+.video-txt {
+    color: var(--secondary-text-color);
+    max-width: 400px;
+    margin: auto;
+
+}
+
+/* COMPANIES SECTION */
+#companies h2 {
+    text-transform: none;
+}
+
+#companies ul li {
+    list-style-type: none;
+    margin: 35px 0;
+    padding: 10px;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.companies img {
+    margin: 25px;
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.companies img:first-child {
+    max-height: 60px;
+}
+
+
+/* renders good on laptop screen */
+
+@media (min-width: 1000px) {
+    .companies {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .companies img {
+        margin: 40px;
+    }
+}
+
+@media (min-width: 1053px) {
+    .background_image {
+        background: url("../img/hero-img.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        margin-bottom: 100px;
+    }
+
+    .hero img {
+        position: relative;
+        bottom: -100px;
+    }
+
+    #video-container {
+        background-image: url("../img/home-midbck-img.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 700px) {
+
+    #card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-one,
+    .card-two,
+    .card-three {
+        margin: 20px;
+    }
+
+    #video-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .video iframe {
+        width: 560px;
+    }
+
+    .video-txt {
+        margin: 20px;
+    }
+
+}
