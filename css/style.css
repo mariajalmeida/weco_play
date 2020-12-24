@@ -126,6 +126,13 @@ h3 {
     text-align: center;
 }
 
+.video-txt h2 {
+    text-align: left;
+    margin: 0;
+    margin-top: 20px;
+    line-height: 28px;
+}
+
 .card-one,
 .card-two,
 .card-three {

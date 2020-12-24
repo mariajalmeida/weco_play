@@ -119,11 +119,8 @@ nav li a {
 
 /* FOOTER */
 footer {
-    background-image: url("../img/footwave.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 140px;
-    padding-bottom: 10px;
+    background-color: #F3F2F3;
+    padding: 10px;
 }
 
 #footer-container {
@@ -146,6 +143,7 @@ footer p {
     text-align: center;
     font-size: 12px;
     font-weight: 900;
+    margin: 0;
 }
 
 footer h4 {
@@ -197,6 +195,16 @@ footer .fab {
     color: #c4302b;
 }
 
+@media (min-width: 1053px) {
+    footer {
+        background-color: transparent;
+        background-image: url("../img/footwave.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 140px;
+        padding-bottom: 10px;
+    }
+}
 
 @media (min-width: 1000px) {
 
@@ -207,6 +215,5 @@ footer .fab {
     #footer-container {
         justify-content: space-around;
     }
-
 
 }
