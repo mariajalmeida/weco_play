@@ -31,8 +31,9 @@
     font-weight: 900;
 }
 
-.grid h2:first-child {
-    margin: 20px auto;
+.grid h2:first-child, .grid h2:nth-child(4) {
+    margin: 40px auto;
+    margin-bottom: 0;
     border-radius: 2px;
     width: 40px;
     height: auto;
@@ -50,15 +51,102 @@
     padding: 2px;
 }
 
+.solution {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+
 .solution > div {
     margin: 20px;
     padding: 20px;
     background-color: rgb(227, 234, 236);
     border-radius: 20px;
+    max-width: 400px;
 }
 
 .solution img {
     border-radius: 20px;
+}
+
+/* STEP 2*/
+
+.hardware {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.recommended_hardware {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.tables {
+    margin: 20px;
+}
+
+.tables img {
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.tables button, .recommended_hardware button {
+    background: orange;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    width: 120px;
+}
+
+.tables_images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 580px;
+}
+
+.tables_images img {
+    max-width: 280px;
+    margin: auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+table th {
+    background: orange;
+    color: white;
+    padding: 6px 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+table td {
+    padding-left: 5px;
+}
+
+.recommended_hardware img {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.or {
+    font-size: 30px;
+    margin: 20px;
 }
 
 @media (min-width: 1200px) {
