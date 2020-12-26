@@ -3,9 +3,11 @@
 :root {
     --font-size-text: 14px;
     --font-size-button: 15px;
-    --font-size-title: 40px;
 
+    --font-size-title: 40px;
     --headline-font: 'Poppins', sans-serif;
+    --line-height-headline: 40px;
+    
     --copy-font: 'Nunito', sans-serif;
     --main-text-color: #000;
     --secondary-text-color: #fff;

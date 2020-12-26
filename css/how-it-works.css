@@ -1,0 +1,72 @@
+.background_image {
+    background-color: #30A7B0;
+    padding: 30px 60px;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.hero_content {
+    max-width: 350px;
+    margin: auto;
+}
+
+.hero_content h1 {
+    margin-bottom: 0;
+    font-size: var(--font-size-title);
+    font-family: var(--headline-font);
+    line-height: var(--line-height-headline);
+}
+
+.hero_content p {
+    text-align: justify;
+}
+
+.grid h2, .grid span {
+    text-align: center;
+    font-family: var(--headline-font);
+    font-weight: 900;
+}
+
+.grid h2:first-child {
+    margin: 20px auto;
+    border-radius: 2px;
+    width: 40px;
+    height: auto;
+    padding: 2px 8px;
+    background-color: black;
+    color: white;
+}
+
+.grid h3 {
+    text-align: center;
+    margin: 6px auto;
+    margin-bottom: 20px;
+    background-color: orange;
+    color: white;
+    padding: 2px;
+}
+
+.solution > div {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(227, 234, 236);
+    border-radius: 20px;
+}
+
+.solution img {
+    border-radius: 20px;
+}
+
+@media (min-width: 1200px) {
+    .background_image {
+        background: url("../img/how-it-works.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+        height: 440px;
+    }
+}
