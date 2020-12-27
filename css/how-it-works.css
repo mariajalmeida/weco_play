@@ -43,7 +43,7 @@ nav ul li a:hover {
     font-weight: 900;
 }
 
-.grid h2:first-child, .grid h2:nth-child(4) {
+.grid h2:first-child, .grid h2:nth-child(4), .grid h2:nth-child(8), .grid h2:nth-child(11) {
     margin: 40px auto;
     margin-bottom: 0;
     border-radius: 2px;
@@ -176,7 +176,6 @@ table td {
 }
 
 .games p:first-of-type {
-    text-align: center;
     max-width: 480px;
     margin: auto;
     margin-bottom: 20px;
@@ -216,7 +215,7 @@ table td {
     max-width: 180px;
 }
 
-.package button {
+.package button, .support button, .community button {
     font-weight: 900;
     background-color: orange;
     color: white;
@@ -230,6 +229,22 @@ button:hover {
     background: rgb(230, 169, 58);
     cursor: pointer;
 }
+
+.support, .community {
+    max-width: 480px;
+    margin: 20px;
+}
+
+.community {
+    padding: 20px;
+}
+
+@media (min-width: 530px) {
+    .support, .community {
+        margin: auto;
+    }
+}
+
 
 @media (min-width: 676px) {
     .basic_price {
