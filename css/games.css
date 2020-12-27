@@ -1,7 +1,6 @@
 :root {
     --background-colour: #2F18F5;
     --accent-colour: #F2A71B;
-    --button-border-radius: 4px;
 
     --headline-font: 'Poppins', sans-serif;
     --copy-font: 'Nunito', sans-serif;
@@ -45,6 +44,7 @@ nav li a:hover {
     background: var(--accent-colour);
     cursor: pointer;
     border-radius: var(--button-border-radius);
+    border: 1px solid transparent;
 }
 
 .btn:hover {

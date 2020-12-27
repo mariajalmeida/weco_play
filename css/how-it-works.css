@@ -1,17 +1,33 @@
+:root {
+    --accent-colour: orange;
+}
+
 .background_image {
     background-color: #30A7B0;
     padding: 30px 60px;
 }
 
+nav ul li a:hover {
+    color: var(--accent-colour);
+}
+
 .btn {
-    background-color: orange;
+    background: var(--accent-colour);
     color: white;
     cursor: pointer;
+    border-radius: var(--button-border-radius);
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid var(--accent-colour);
 }
 
 .hero_content {
     max-width: 350px;
     margin: auto;
+    color: white;
 }
 
 .hero_content h1 {
@@ -21,11 +37,7 @@
     line-height: var(--line-height-headline);
 }
 
-.hero_content p {
-    text-align: justify;
-}
-
-.grid h2, .grid span {
+.grid h2 {
     text-align: center;
     font-family: var(--headline-font);
     font-weight: 900;
@@ -60,7 +72,7 @@
 }
 
 .solution > div {
-    margin: 20px;
+    margin: 0 10px 20px 10px;
     padding: 20px;
     background-color: rgb(227, 234, 236);
     border-radius: 20px;
@@ -108,6 +120,8 @@
     border: none;
     padding: 8px 12px;
     width: 120px;
+    font-weight: 900;
+    border-radius: var(--button-border-radius);
 }
 
 .tables_images {
@@ -147,6 +161,91 @@ table td {
 .or {
     font-size: 30px;
     margin: 20px;
+    font-weight: 900;
+}
+
+.recommended_hardware h4 {
+    margin-top: 0;
+    font-weight: 900;
+}
+
+/* GET THE GAMES */
+
+.games {
+    margin: 20px;
+}
+
+.games p:first-of-type {
+    text-align: center;
+    max-width: 480px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.packages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.package {
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    position: relative;
+}
+
+.package ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package ul li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.package p:last-of-type {
+    padding: 8px 12px;
+    border-left: 0.5px solid grey;
+    max-width: 180px;
+}
+
+.package button {
+    font-weight: 900;
+    background-color: orange;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    border-radius: var(--button-border-radius);
+}
+
+button:hover {
+    background: rgb(230, 169, 58);
+    cursor: pointer;
+}
+
+@media (min-width: 676px) {
+    .basic_price {
+        position: absolute;
+        bottom: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
+    }
+    
+    .basic {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -156,5 +255,10 @@ table td {
         background-size: cover;
         margin-bottom: 20px;
         height: 440px;
+    }
+
+    .hero_content {
+        margin-top: 50px;
+        margin-left: 130px;
     }
 }

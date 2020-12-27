@@ -38,6 +38,7 @@ nav li a:hover {
     background: var(--accent-colour);
     cursor: pointer;
     border-radius: var(--button-border-radius);
+    border: 1px solid transparent;
 }
 
 .btn:hover {
@@ -47,7 +48,6 @@ nav li a:hover {
 
 .hero-btn button {
     outline: none;
-    border: none;
     padding: 8px 12px;
     background: none;
     border-radius: var(--button-border-radius);
@@ -55,17 +55,19 @@ nav li a:hover {
     cursor: pointer;
     margin-right: 15px;
     margin-bottom: 10px;
+    border: 1px solid transparent;
 }
 
 .hero-btn button {
-    border: 1px solid var(--accent-colour);
+    background-color: var(--accent-colour);
     color: white;
 }
 
 /* HOVER BTN HERE */
 
 .hero-btn button:hover {
-    background: var(--accent-colour);
+    background-color: transparent;
+    border: 1px solid var(--accent-colour);
     color: white;
 }
 
@@ -87,11 +89,6 @@ nav li a:hover {
     font-weight: 900;
     margin-bottom: 0;
     line-height: 40px;
-}
-
-.txt p,
-.video-txt p {
-    text-align: justify;
 }
 
 h1,
