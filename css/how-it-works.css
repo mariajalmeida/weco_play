@@ -102,10 +102,10 @@ nav ul li a:hover {
     margin: 20px;
 }
 
-.tables img {
+.tables .manico {
     max-width: 200px;
     margin: auto;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
 }
 
 .center {
@@ -238,6 +238,7 @@ button:hover {
 .community {
     padding: 20px;
 }
+
 
 @media (min-width: 530px) {
     .support, .community {
