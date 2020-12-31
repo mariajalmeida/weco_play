@@ -24,6 +24,38 @@
     border: 1px solid var(--accent-colour);
 }
 
+.hero_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.hero_content h1 {
+    margin: auto;
+    font-size: 35px;
+    font-family: var(--headline-font);
+    line-height: var(--line-height-headline);
+}
+
+@media (min-width: 700px) {
+    .hero_content h1 {
+        max-width: 420px;
+    }
+
+    .hero_content p {
+        max-width: 420px;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 860px) {
+    .hero_content {
+        margin-top: 20px;
+    }
+}
+
 @media (min-width: 1200px) {
     .background_image {
         background: url("../img/posters-header.svg");
@@ -31,5 +63,16 @@
         background-size: cover;
         margin-bottom: 20px;
         height: 580px;
+    }
+
+    .hero_content {
+        max-width: 1100px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .hero_content h1 {
+        font-size: var(--font-size-title);
+        max-width: 440px;
     }
 }
