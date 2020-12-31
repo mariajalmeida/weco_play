@@ -1,0 +1,35 @@
+:root {
+    --accent-colour: orange;
+}
+
+#loader-dots span {
+    background-color: var(--accent-colour);
+}
+
+.background_image {
+    background-color: #5959FF;
+    padding: 30px 60px;
+}
+
+.btn {
+    background: var(--accent-colour);
+    color: white;
+    cursor: pointer;
+    border-radius: var(--button-border-radius);
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid var(--accent-colour);
+}
+
+@media (min-width: 1200px) {
+    .background_image {
+        background: url("../img/posters-header.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+        height: 580px;
+    }
+}

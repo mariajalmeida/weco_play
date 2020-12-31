@@ -2,6 +2,10 @@
     --accent-colour: orange;
 }
 
+#loader-dots span {
+    background-color: var(--accent-colour);
+}
+
 .background_image {
     background-color: #30A7B0;
     padding: 30px 60px;
