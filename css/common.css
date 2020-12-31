@@ -37,7 +37,6 @@ img {
 /* NAVIGATION */
 
 h1,
-h2,
 h4 {
     text-transform: uppercase;
     font-weight: 900;
@@ -69,6 +68,10 @@ nav li a {
     color: var(--secondary-text-color);
     font-weight: bolder;
 
+}
+
+a {
+    text-decoration: none;
 }
 
 /*LOADER*/
