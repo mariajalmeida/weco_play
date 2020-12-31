@@ -35,11 +35,6 @@
     max-width: 660px;
 }
 
-nav li a:hover {
-    color: var(--accent-colour);
-    transition: color .8s;
-}
-
 .btn {
     background: var(--accent-colour);
     cursor: pointer;

@@ -14,8 +14,6 @@
     --main-text-color: #000;
     --secondary-text-color: #fff;
     --bg-color-loader: #f3f2f3;
-
-
 }
 
 body {
@@ -68,6 +66,11 @@ nav li a {
     color: var(--secondary-text-color);
     font-weight: bolder;
 
+}
+
+nav ul li a:hover {
+    color: var(--accent-colour);
+    transition: color .8s;
 }
 
 a {

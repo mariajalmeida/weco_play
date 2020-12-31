@@ -22,12 +22,6 @@
     padding-bottom: 0;
 }
 
-nav li a:hover {
-    color: var(--accent-colour);
-    transition: color .8s;
-}
-
-
 .btn {
     border: 1px solid transparent;
     color: white;
