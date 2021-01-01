@@ -39,6 +39,18 @@
     line-height: var(--line-height-headline);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main img {
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+}
+
 @media (min-width: 700px) {
     .hero_content h1 {
         max-width: 420px;
