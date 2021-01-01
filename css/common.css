@@ -16,6 +16,15 @@
     --bg-color-loader: #f3f2f3;
 }
 
+.active {
+    background: var(--accent-colour) !important;
+}
+
+/* FILTERING */
+.hide {
+    display: none;
+}
+
 body {
     margin: 0;
     font-family: var(--copy-font);

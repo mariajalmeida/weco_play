@@ -44,7 +44,10 @@ function retrieveSingleGame(gameDivision) {
 
 //EVENT FOR FILTERS
 const categories = document.querySelectorAll(".categories button");
-categories.forEach(button => button.addEventListener('click', filterData));
+categories.forEach((button) => {
+    console.log(button, "buttons")
+    button.addEventListener('click', filterData)
+});
 //Class active
 function filterData(e) {
     const clicked = e.target.id;
@@ -59,6 +62,7 @@ function filterData(e) {
     const allBoxes = document.querySelectorAll('.box_container');
     allBoxes.forEach((box) => {
         if (box.classList[1] == clicked) {
+            console.log("this is it", box)
             box.classList.remove("hide");
         } else {
             box.classList.add("hide")

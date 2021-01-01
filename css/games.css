@@ -114,16 +114,6 @@
     margin: 5px;
 }
 
-.active {
-    background: var(--accent-colour) !important;
-}
-
-/* FILTERING */
-.hide {
-    display: none;
-}
-
-
 /* GAMES */
 .box_container {
     background: #2F18F5;
