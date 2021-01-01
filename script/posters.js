@@ -51,6 +51,7 @@ function retrieveSinglePoster(eachPoster) {
     const clone = template.cloneNode(true);
 
     clone.querySelector('.box_container').classList.add(eachPoster._embedded["wp:term"][0][0].slug);
+    clone.querySelector('.box_container').classList.add(eachPoster._embedded["wp:term"][0][1].slug);
 
     const images = eachPoster._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     clone.querySelector("img").src = images;
@@ -66,9 +67,7 @@ function filterPosters(post) {
 
 
             document.querySelectorAll(".categories button").forEach(cat => {
-            console.log("cat", cat)
             if (cat.id === clicked) {
-                console.log("almost")
                 cat.classList.add("active");
             } else {
                 cat.classList.remove("active");
@@ -80,15 +79,10 @@ function filterPosters(post) {
     allBoxes.forEach((box) => {
         if (box.classList[1] == clicked) {
             box.classList.remove("hide");
+        } else if (box.classList[2] == clicked) {
+            box.classList.remove("hide");
         } else {
             box.classList.add("hide")
-        }
-        //showAll
-        const btnAll = document.querySelector("#all");
-        btnAll.addEventListener("click", showAll);
-
-        function showAll() {
-            box.classList.remove("hide")
         }
     });
 }
