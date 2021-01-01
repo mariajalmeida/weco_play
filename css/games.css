@@ -114,6 +114,10 @@
     margin: 5px;
 }
 
+.categories button:hover {
+    background-color: var(--accent-colour);
+}
+
 /* GAMES */
 .box_container {
     background: #2F18F5;

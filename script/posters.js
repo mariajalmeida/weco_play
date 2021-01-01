@@ -23,9 +23,9 @@ function createFilters(filt) {
         button.textContent = category.slug;
 
         document.querySelector(".categories").appendChild(button);
-        const categoriesMat = document.querySelectorAll(".categories button");
-        console.log(button, "buttons")
+
         button.addEventListener('click', filterPosters);
+
     })
 }
 
@@ -44,14 +44,11 @@ function processData(data) {
 }
 
 function retrieveSinglePoster(eachPoster) {
-    // console.log(eachPoster._embedded["wp:term"][0][0].slug)
-    // console.log("each poster - category")
 
     const template = document.querySelector("#posters").content;
     const clone = template.cloneNode(true);
 
     clone.querySelector('.box_container').classList.add(eachPoster._embedded["wp:term"][0][0].slug);
-    console.log("sup", eachPoster._embedded["wp:term"][0][0].slug)
 
     const images = eachPoster._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     clone.querySelector("img").src = images;
@@ -63,20 +60,27 @@ function retrieveSinglePoster(eachPoster) {
 
 
 function filterPosters(post) {
-    console.log("post", post);
     const clicked = post.target.id;
-    console.log(post.target.id, "id")
 
-    //Filter games
+            document.querySelectorAll(".categories button").forEach(cat => {
+            console.log("cat", cat)
+            if (cat.id === clicked) {
+                console.log("almost")
+                cat.classList.add("active");
+            } else {
+                cat.classList.remove("active");
+            }
+            })
+
+    //filter posters
     const allBoxes = document.querySelectorAll('.box_container');
     allBoxes.forEach((box) => {
         if (box.classList[1] == clicked) {
-            console.log("this is it", box)
             box.classList.remove("hide");
         } else {
             box.classList.add("hide")
         }
-    //     //showAll
+        //showAll
         const btnAll = document.querySelector("#all");
         btnAll.addEventListener("click", showAll);
 
