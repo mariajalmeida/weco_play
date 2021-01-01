@@ -24,6 +24,8 @@ function createFilters(filt) {
 
         document.querySelector(".categories").appendChild(button);
 
+        document.querySelector("#all").classList.add("active");
+
         button.addEventListener('click', filterPosters);
 
     })
@@ -61,6 +63,7 @@ function retrieveSinglePoster(eachPoster) {
 
 function filterPosters(post) {
     const clicked = post.target.id;
+
 
             document.querySelectorAll(".categories button").forEach(cat => {
             console.log("cat", cat)
