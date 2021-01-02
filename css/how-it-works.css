@@ -25,7 +25,6 @@
 }
 
 .hero_content {
-    max-width: 350px;
     margin: auto;
     color: white;
 }
@@ -262,6 +261,17 @@ button:hover {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .hero_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_content > div {
+        max-width: 300px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -275,6 +285,10 @@ button:hover {
 
     .hero_content {
         margin-top: 50px;
-        margin-left: 130px;
+        justify-content: space-evenly;
+    }
+
+    .hero_content > div {
+        max-width: 420px;
     }
 }

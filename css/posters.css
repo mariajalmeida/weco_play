@@ -58,7 +58,7 @@ main img {
     background: var(--background-colour);
     border-radius: 2px;
     text-align: center;
-    width: calc(100% - 30px);
+    width: 100%;
     margin: 20px auto;
     margin-bottom: 0;
 }
@@ -68,7 +68,7 @@ main img {
     border: none;
     background: none;
     color: white;
-    width: calc(20% - 10px);
+    width: 20%;
     padding: 4px;
     cursor: pointer;
     margin: 5px;
@@ -106,9 +106,8 @@ main img {
     }
 
     .hero_content {
-        max-width: 1100px;
-        margin: auto;
         margin-top: 50px;
+        justify-content: space-evenly;
     }
 
     .hero_content h1 {
@@ -116,9 +115,12 @@ main img {
         max-width: 440px;
     }
 
+    .hero_content h1, .hero_content p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     main {
-        max-width: 1210px;
-        margin: 20px auto;
-        justify-content: flex-start;
+        margin: 20px 100px;
     }
 }
