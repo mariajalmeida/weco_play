@@ -138,13 +138,57 @@ p {
     flex-wrap: wrap;
 }
 
-.inner_features p {
+.feature:not(.description) {
     background: var(--light-version);
-    width: 200px;
+    width: 220px;
     display: block;
     text-align: center;
     margin: 15px;
     padding: 8px 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.feature::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f05a";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.feature:not(.description) .description {
+    visibility: hidden;
+    width: 280px;
+    background-color: var(--background-colour);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.feature:hover .description {
+    visibility: visible;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+    box-shadow: 0px 0px 7px 0px rgba(140, 140, 140, 1);
+}
+
+.feature .description::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--background-colour) transparent;
 }
 
 /* SIMILAR GAMES */

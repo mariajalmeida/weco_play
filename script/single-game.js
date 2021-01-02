@@ -53,8 +53,15 @@ function createIngame(ingame) {
 // here's weco's guaranteed features
 function createFeatures(ft) {
     ft.features.forEach(feature => {
-        const weco_feature = document.createElement("p");
+        const weco_feature = document.createElement("div");
+        weco_feature.setAttribute("class", "feature");
         weco_feature.textContent = feature.post_title;
+
+        const feature_inner = document.createElement("div");
+        feature_inner.setAttribute("class", "description")
+        feature_inner.innerHTML = feature.post_content;
+        weco_feature.appendChild(feature_inner);
+        
         document.querySelector(".inner_features").appendChild(weco_feature);
     })
 }
@@ -79,13 +86,13 @@ function showGame(game) {
     const longDescription = clone.querySelector(".long_description p");
     longDescription.innerHTML = game.content.rendered;
     const fileSize = clone.querySelector(".file_size");
-    fileSize.textContent = game.file_size;
+    fileSize.textContent = game.file_size + " GB";
     const releaseDate = clone.querySelector(".release_date");
     releaseDate.textContent = game.release_date;
     const players = clone.querySelector(".players");
     players.textContent = game.players;
     const category = clone.querySelector(".category");
-    category.textContent = game.genre;
+    category.textContent = game.learning_goal;
 
     // append child
     document.querySelector("main").appendChild(clone);
