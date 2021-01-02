@@ -86,3 +86,5 @@ function filterPosters(post) {
         }
     });
 }
+
+console.log("ready");
