@@ -58,7 +58,7 @@ main img {
     background: var(--background-colour);
     border-radius: 2px;
     text-align: center;
-    width: 100%;
+    width: calc(100% - 30px);
     margin: 20px auto;
     margin-bottom: 0;
 }
@@ -68,7 +68,7 @@ main img {
     border: none;
     background: none;
     color: white;
-    width: 20%;
+    width: calc(20% - 10px);
     padding: 4px;
     cursor: pointer;
     margin: 5px;
@@ -117,6 +117,8 @@ main img {
     }
 
     main {
-        margin: 20px 100px;
+        max-width: 1210px;
+        margin: 20px auto;
+        justify-content: flex-start;
     }
 }
