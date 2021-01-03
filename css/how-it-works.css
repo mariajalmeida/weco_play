@@ -225,7 +225,9 @@ table td {
 }
 
 button:hover {
-    background: rgb(230, 169, 58);
+    transition: all 0.5s;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -258,8 +260,9 @@ button:hover {
     .basic {
         position: absolute;
         bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0%;
+        right: 0;
+        margin: auto;
     }
 
     .hero_content {
