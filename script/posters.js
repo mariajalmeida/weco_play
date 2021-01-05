@@ -56,6 +56,8 @@ function retrieveSinglePoster(eachPoster) {
     const images = eachPoster._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
     clone.querySelector("img").src = images;
 
+    // const links = clone.querySelector(".box_container a");
+
 
     // append child
     document.querySelector("main").appendChild(clone);

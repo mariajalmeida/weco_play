@@ -104,13 +104,17 @@ main img {
     }
 }
 
+div.eapps-widget {
+    position: fixed!important;
+}
+
 @media (min-width: 1200px) {
     .background_image {
-        background: url("../img/posters-header.svg");
+        background: url("../img/poster-header.svg");
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 20px;
-        height: 580px;
+        height: 440px;
     }
 
     .hero_content {
