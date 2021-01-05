@@ -104,10 +104,6 @@ main img {
     }
 }
 
-div.eapps-widget {
-    position: fixed!important;
-}
-
 @media (min-width: 1200px) {
     .background_image {
         background: url("../img/poster-header.svg");
