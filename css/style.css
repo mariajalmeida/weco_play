@@ -2,7 +2,7 @@
 :root {
     --bg-color: #f3f2f3;
     --accent-colour: #13a867;
-    --home-filter: #f6c026;
+    --background-colour: #f6c026;
     --midsection-filter: #13a867;
     --button-border-radius: 4px;
 
@@ -22,22 +22,9 @@
 .background_image {
     background-size: cover;
     background-repeat: no-repeat;
-    background: var(--home-filter);
+    background: var(--background-colour);
     padding: 30px 60px;
     padding-bottom: 0;
-}
-
-.btn {
-    color: var(--secondary-text-color);
-    background: var(--accent-colour);
-    cursor: pointer;
-    border-radius: var(--button-border-radius);
-    border: 1px solid transparent;
-}
-
-.btn:hover {
-    background: none;
-    border: 1px solid var(--accent-colour);
 }
 
 .hero-btn button {
