@@ -31,7 +31,7 @@
 }
 
 .hero_content h1 {
-    margin-bottom: 0;
+    margin: 0;
     font-size: var(--font-size-title);
     font-family: var(--headline-font);
     line-height: var(--line-height-headline);
@@ -289,6 +289,7 @@ button:hover {
 
     .hero_content {
         margin-top: 50px;
+        align-items: flex-end;
     }
 
     .hero_content > div {
