@@ -96,6 +96,8 @@ function showGame(game) {
 
     // append child
     document.querySelector("main").appendChild(clone);
+
+    document.querySelector(".load").style.display = "none";
 }
 
 // fetched cards here

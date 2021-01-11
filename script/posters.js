@@ -43,6 +43,7 @@ function processData(data) {
     // console.log("here are the posters");
     //  console.log(data);
     data.forEach(retrieveSinglePoster);
+    document.querySelector(".load").style.display = "none";
 }
 
 function retrieveSinglePoster(eachPoster) {

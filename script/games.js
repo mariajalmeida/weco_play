@@ -39,6 +39,8 @@ function retrieveSingleGame(gameDivision) {
 
     // append child
     document.querySelector("main").appendChild(clone);
+
+    document.querySelector(".load").style.display = "none";
 }
 
 
